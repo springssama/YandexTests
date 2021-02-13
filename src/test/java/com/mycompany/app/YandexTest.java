@@ -11,6 +11,8 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class YandexTest {
 
+    final String SITE_URL = "https://ya.ru";
+
     @Test
     @Description("User Can Search Propellerads With Yandex")
     public void UserCanSearchPropelleradsWithYandex() {
@@ -22,17 +24,18 @@ public class YandexTest {
     @Description("User Can Open Propellerads With Yandex")
     public void UserCanOpenPropelleradsWithYandex(){
         OpenYandexAndSearchPropellerads();
+
         OpenPropellerads();
     }
 
     @Step("Open Yandex and search propellerads")
     public void OpenYandexAndSearchPropellerads(){
-        open("https://ya.ru");
+        open(SITE_URL);
         $("#text").setValue("propellerads").pressEnter();
     }
 
     @Step
     public void OpenPropellerads(){
-        $$("#search-result li.serp-item").find(text("PropellerAds")).click();
+        $$("#search-result li.serp-item").find(text("PropellerAds")).scrollTo().click();
     }
 }

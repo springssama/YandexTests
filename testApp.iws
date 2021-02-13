@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bf45b03-0152-476a-85ca-88267fba7934" name="Default Changelist" comment="" />
+    <list default="true" id="5bf45b03-0152-476a-85ca-88267fba7934" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/allure.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/YandexTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/YandexTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/testApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testApp.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/testApp.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testApp.iws" beforeDir="false" afterPath="$PROJECT_DIR$/testApp.iws" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -260,7 +267,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunManager" selected="JUnit.YandexTest">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
@@ -411,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613219804442</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="My second commit">
+      <created>1613219976229</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1613219976229</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -459,10 +473,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="My first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="My first commit" />
+    <MESSAGE value="My second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="My second commit" />
   </component>
   <component name="VssConfiguration">
     <CheckoutOptions>
