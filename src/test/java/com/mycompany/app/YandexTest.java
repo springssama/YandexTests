@@ -5,8 +5,7 @@ import io.qameta.allure.Step;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 
 public class YandexTest {
@@ -16,25 +15,26 @@ public class YandexTest {
     @Test
     @Description("User Can Search Propellerads With Yandex")
     public void UserCanSearchPropelleradsWithYandex() {
-        OpenYandexAndSearchPropellerads();
-        $$("#search-result li.serp-item").find(text("PropellerAds")).shouldBe(visible).shouldHave(text("propellerads.com"));
+        OpenYandexAndSearch("propellerads");
+        $$("#search-result li.serp-item").find(text("propellerads")).shouldBe(visible);
     }
 
     @Test
     @Description("User Can Open Propellerads With Yandex")
     public void UserCanOpenPropelleradsWithYandex(){
-        OpenYandexAndSearchPropellerads();
+        OpenYandexAndSearch("propellerads");
 
         OpenPropellerads();
     }
 
+
     @Step("Open Yandex and search propellerads")
-    public void OpenYandexAndSearchPropellerads(){
+    public void OpenYandexAndSearch(String word){
         open(SITE_URL);
-        $("#text").setValue("propellerads").pressEnter();
+        $("#text").setValue(word).pressEnter();
     }
 
-    @Step
+    @Step("Open Propellerads")
     public void OpenPropellerads(){
         $$("#search-result li.serp-item").find(text("PropellerAds")).scrollTo().click();
     }
