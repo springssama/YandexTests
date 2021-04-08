@@ -18,21 +18,10 @@ public class YandexTest {
         $$("#search-result li.serp-item").find(text("propellerads")).shouldBe(visible);
     }
 
-    @Test
-    @Description("User Can Open Propellerads With Yandex")
-    public void UserCanOpenPropelleradsWithYandex(){
-        OpenYandexAndSearch("propellerads");
-        OpenPropellerads();
-    }
-
     @Step("Open Yandex and search propellerads")
     public void OpenYandexAndSearch(String word){
         open(SITE_URL);
         $("#text").setValue(word).pressEnter();
     }
 
-    @Step("Open Propellerads")
-    public void OpenPropellerads(){
-        $$("#search-result li.serp-item").find(text("PropellerAds")).scrollTo().click();
-    }
 }
